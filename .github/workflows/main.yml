@@ -21,7 +21,7 @@ jobs:
         run: pip install flet==1.0.5
 
       - name: Build Android APK
-        run: flet build apk . --module-name Siyaya_Teksi_Finale --project siyaya-teksi --product "Siyaya Teksi" --org za.co.siyayateksi --yes
+        run: flet build apk --module-name Siyaya_Teksi_Finale --product "Siyaya Teksi" --org za.co.siyayateksi --yes 
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
